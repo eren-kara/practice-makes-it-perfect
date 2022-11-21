@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./dist/index.js"></script>
+</head>
+<body>
+    <template id="add-car">
+        <form id="frm-add-car">
+            <label for="brand">Brand</label>
+            <input type="text" id="brand" name="brand" />
+            <label for="Model" type="text">Model</label>
+            <input type="text" id="model" name="model" />
+            <label for="door">Door</label>
+            <input type="text" id="door" name="door">
+            <label for="lineId">LineId</label>
+            <input type="text" id="lineId" name="lineId">
+            <button type="submit" id="btn-submit-form">Add Car</button>
+        </form>
+    </template>
+    <template id="car">
+        <div class="car">
+            <h3 class="car-brand"></h3>
+            <span class= "car-model"></span>
+            <span class= "car-door"></span>
+        </div>
+    </template>
+    <template id="line">
+        <div class="line-container">
+        <h1 id="line-id"></h1>
+        <div class="car">
+        </div>
+    </div>
+    </template>
+    <div id="app"></div>
+</body>
+</html>
